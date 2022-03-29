@@ -162,9 +162,3 @@ func TestParse(t *testing.T) {
 		})
 	}
 }
-
-func TestParse2(t *testing.T) {
-	data := Parse(`italic small-caps bold 12px/30px Georgia, serif`)
-	fmt.Printf("%#v", data)
-	assert.True(t, false)
-}
