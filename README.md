@@ -15,14 +15,17 @@ data := cfp.Parse(`italic small-caps bold 12px/30px Georgia, serif`)
 
 fmt.Printf("%#v", data)
 
-// map[string]interface {}{
-//   "font-family":[]string{"Georgia", "serif"},
-//   "font-size":"12px",
-//   "font-style":"italic",
-//   "font-variant":"small-caps",
-//   "font-weight":"bold",
-//   "line-height":"30px"
-// }
+/*
+&cfp.Font{
+	Family:[]string{"Georgia", "serif"},
+	Size:"12px",
+	Style:"italic",
+	Variant:"small-caps",
+	Weight:"bold",
+	Stretch:"",
+	LineHeight:"30px",
+}
+*/
 ```
 ## License
 
